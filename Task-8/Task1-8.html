@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			width: 100%;
+			margin: 0 auto;
+			padding: 10px;
+			overflow: hidden;
+			border: 1px solid #999;
+			box-sizing: border-box;
+		}
+		.default {
+			padding: 10px;
+			height: 70px;
+			box-sizing: border-box;
+			float: left;
+		}
+		/* .default:before, .default:after{
+			content:'';
+			clear: both;
+		}  */
+		.inner {
+			background-color: #eee;
+			border: 1px solid #999;
+			height: 50px;
+			width: 100%;
+		}
+		@media(min-width: 769px){
+			.col-max-4 {
+				width: 33.333%;
+			}
+			.col-max-3 {
+				width: 25%;
+			}
+			.col-max-6 {
+				width: 50%;
+			}
+			.col-max-1 {
+				width: 8.333%;
+			}
+			.col-max-2 {
+				width: 16.666%;
+			}
+		}
+		@media(max-width: 768px){
+			.col-min-8 {
+				width: 66.666%;
+			}
+			.col-min-3 {
+				width: 25%;
+			}
+			.col-min-6 {
+				width: 50%;
+			}
+			.col-min-12 {
+				width: 100%;
+			}
+			.col-min-2 {
+				width: 16.666%;
+			}
+		}
+	</style>
+	<title>Document</title>
+</head>
+<body>
+	<div id='container'>
+		<div class='default col-max-4 col-min-6'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-4 col-min-6'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-4 col-min-12'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-3 col-min-3'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-6 col-min-6'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-3 col-min-3'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-1 col-min-2'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-1 col-min-2'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-2 col-min-8'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-2 col-min-3'>
+			<div class="inner"></div>
+		</div>
+		<div class='default col-max-6 col-min-3'>
+			<div class="inner"></div>
+		</div>
+	</div>
+</body>
+</html>

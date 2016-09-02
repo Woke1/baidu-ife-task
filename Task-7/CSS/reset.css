@@ -1,0 +1,7 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,dl,dt,dd,ul,ol,li,
+pre,form,fieldset,button,input,textarea,th,td{margin:0;padding:0;}
+ul,ol{list-style:none;}
+.clearfix{*zoom:1;} 
+.clearfix:before, 
+.clearfix:after{display:table;line-height:0;content:"";} 
+.clearfix:after{clear:both;} 
